@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Lord of the Rings</title>
+    <link rel="stylesheet" href="lord.css">
+    <link rel="icon" href="data:,">
+</head>
+<body>
+    <div id="big">
+        <div id="container-countdown">
+           <p id="countdown"><input id="input" type="number" placeholder="Enter time in minutes" min="1"></p> 
+        </div>
+
+        <div id="buttons">
+            <button id="btnTwo">Set the time</button>
+            <button id="play">Play</button>
+            <button id="pause">Pause</button>
+            <a href="../index.html"><button id="buttonBack">Back</button></a>
+        </div>
+    </div>
+
+    <audio id="player">
+        <source src="lord.mp3" type="audio/mp3">
+    </audio>
+
+    <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline id="myVideo" control>
+        <source src="lord.MP4" type="video/mp4">
+    </video>
+
+   <button id="myButton">Start</button>
+   
+    <script src="lord.js"></script>
+</body>  
+</html>
